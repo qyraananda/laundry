@@ -13,3 +13,13 @@ RewriteRule ^(.*)$ index.php/$1 [L]
 
 userlogin : super@user.com
 password  : superuser
+
+# Screenshot
+
+<img src="https://github.com/qyraananda/laundry/blob/master/login.png">
+<img src="https://github.com/qyraananda/laundry/blob/master/dashboard.png">
+<img src="https://github.com/qyraananda/laundry/blob/master/userakses.png">
+<img src="https://github.com/qyraananda/laundry/blob/master/menu.png">
+<img src="https://github.com/qyraananda/laundry/blob/master/harga.png">
+<img src="https://github.com/qyraananda/laundry/blob/master/tambah.png">
+<img src="https://github.com/qyraananda/laundry/blob/master/backup.png">
