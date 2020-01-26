@@ -6,12 +6,14 @@ Adalah framework PHP dengan model MVC ntuk membangun website dinamis. CodeIgnite
 Untuk mendownload CodeIgniter di https://codeigniter.com/en/download.
 
 # htaccess
+<pre>
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php/$1 [L]
+</pre>
 
-userlogin : super@user.com
+userlogin : super@user.com,
 password  : superuser
 
 # Screenshot
