@@ -1,29 +1,3 @@
-<script src="<?php echo base_url();?>assets/locate/geoPosition.js" type="text/javascript" charset="utf-8"></script>
-	<script src="<?php echo base_url();?>assets/locate/geoPositionSimulator.js" type="text/javascript" charset="utf-8"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6X6Gp7571r3Xu4feyQPGVrQ6z3VEuF4o&#038;ver=3.0.34#038;callback=initMap"></script>
-<script type="text/javascript">
-		if(geoPosition.init()){
-			geoPosition.getCurrentPosition(success_callback,error_callback,{enableHighAccuracy:true});
-		}
-		else{
-			document.getElementById('result').innerHTML = '<span class="error">Functionality not available</span>';
-		}
-
-		function success_callback(p)
-		{
-			var latitudes = parseFloat( p.coords.latitude ).toFixed(2);
-			var longitudes = parseFloat( p.coords.longitude ).toFixed(2);
-			
-			document.getElementById('latitude').innerHTML = '<input type="text" class="form-control" name="lat" id="latitude" value="'+latitudes+'" readonly>';
-			document.getElementById('longitude').innerHTML = '<input type="text" class="form-control" name="lng" id="longitude" value="' + longitudes+'" readonly>';		
-			
-		}
-		
-		function error_callback(p)
-		{
-			document.getElementById('result').innerHTML = '<span class="error">' + p.message + '</span>';			
-		}		
-	</script>
 <div class="card">
 	<div id="result"></div>
 	<div class="card-header" data-background-color="purple">
