@@ -18,34 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/login/fonts/iconic/css/material-design-iconic-font.min.css">
 	<link href="<?php echo base_url();?>assets/login/util.css" rel="stylesheet" type="text/css"> 
-	<link href="<?php echo base_url();?>assets/login/main.css" rel="stylesheet" type="text/css"> 
-	<script src="<?php echo base_url();?>assets/locate/geoPosition.js" type="text/javascript" charset="utf-8"></script>
-	<script src="<?php echo base_url();?>assets/locate/geoPositionSimulator.js" type="text/javascript" charset="utf-8"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN6Fam0qspGHfd38V557mP1cA8WJoWg4A&#038;ver=3.0.34#038;callback=initMap"></script>
-		
-	<script type="text/javascript">
-		if(geoPosition.init()){
-			geoPosition.getCurrentPosition(success_callback,error_callback,{enableHighAccuracy:true});
-		}
-		else{
-			document.getElementById('result').innerHTML = '<span class="error">Functionality not available</span>';
-		}
-
-		function success_callback(p)
-		{
-			var latitudes = parseFloat( p.coords.latitude ).toFixed(2);
-			var longitudes = parseFloat( p.coords.longitude ).toFixed(2);
-			
-			document.getElementById('latitude').innerHTML = '<input type="text" name="latitude" id="latitude" value="'+latitudes+'">';
-			document.getElementById('longitude').innerHTML = '<input type="text" name="longitude" id="longitude" value="' + longitudes+'">';		
-			document.getElementById('coordinates').style.display = 'block';
-		}
-		
-		function error_callback(p)
-		{
-			document.getElementById('result').innerHTML = '<span class="error">' + p.message + '</span>';			
-		}		
-	</script>	
+	<link href="<?php echo base_url();?>assets/login/main.css" rel="stylesheet" type="text/css"> 	
 </head>
 <body>
 
