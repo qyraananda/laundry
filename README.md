@@ -16,6 +16,9 @@ RewriteRule ^(.*)$ index.php/$1 [L]
 userlogin : super@user.com,
 password  : superuser
 
+# Repository
+git clone https://github.com/qyraananda/laundry/
+
 # Screenshot
 
 <img src="https://github.com/qyraananda/laundry/blob/master/login.png">
